@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParcelsListingFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/parcels_list_swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layoutFooterView"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp">
+
+        <ListView
+            android:id="@+id/parcels_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/transparent"
+            android:dividerHeight="@dimen/list_divider_height" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutFooterView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAPIHitsCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/label_no_of_api_hits"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/tv_api_info"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tvParcelsCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/label_parcels_count"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/tv_api_info"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <com.aditya.hackerearth.porterapp.helper.ui.OverlayMenu
+        android:id="@+id/omSortMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:ob_addButtonColorNormal="@color/bg_overlay_blue"
+        app:ob_addButtonColorPressed="@color/bg_overlay_blue_pressed"
+        app:ob_iconRef="@drawable/ic_sort">
+
+        <com.aditya.hackerearth.porterapp.helper.ui.OverlayButton
+            android:id="@+id/obSortByName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ob_colorNormal="@color/bg_overlay_blue"
+            app:ob_colorPressed="@color/bg_overlay_blue_pressed"
+            app:ob_icon="@drawable/ic_alpha_sort" />
+
+
+        <com.aditya.hackerearth.porterapp.helper.ui.OverlayButton
+            android:id="@+id/obSortByPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ob_colorNormal="@color/bg_overlay_blue"
+            app:ob_colorPressed="@color/bg_overlay_blue_pressed"
+            app:ob_icon="@drawable/ic_rupee" />
+
+        <com.aditya.hackerearth.porterapp.helper.ui.OverlayButton
+            android:id="@+id/obSortByWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ob_colorNormal="@color/bg_overlay_blue"
+            app:ob_colorPressed="@color/bg_overlay_blue_pressed"
+            app:ob_icon="@drawable/ic_weight" />
+    </com.aditya.hackerearth.porterapp.helper.ui.OverlayMenu>
+</RelativeLayout>

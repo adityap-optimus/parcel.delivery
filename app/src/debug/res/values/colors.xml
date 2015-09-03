@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_actionbar">#194BAF</color>
+    <color name="bg_statusbar">#193296</color>
+    <color name="text_actionbar">#ffffff</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="transparent20">#20000000</color>
+
+    <!-- Swipe refresh layout colors-->
+    <color name="swipe_refresh_blue">#1013C9</color>
+    <color name="swipe_refresh_green">#31AD03</color>
+
+    <color name="black">#111111</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="bg_overlay_blue">#194BAF</color>
+    <color name="bg_overlay_blue_pressed">#193296</color>
+
+    <color name="bg_listView_normal">#20008CFF</color>
+    <color name="bg_listView_selected">#40008CFF</color>
+    <color name="lv_color_name">#2196FA</color>
+    <color name="lv_color_price">#2196FA</color>
+    <color name="tv_api_info">#ED501C</color>
+</resources>

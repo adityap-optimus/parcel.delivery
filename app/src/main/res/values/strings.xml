@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PorterApp</string>
+    <string name="title_details">Parcel Details</string>
+    <string name="label_action_search">Search</string>
+    <string name="hint_action_search">By name, weight, type</string>
+    <string name="label_item_price">\u20B9 %s</string>
+    <string name="label_no_of_api_hits">No Of API Hits: %s</string>
+    <string name="label_parcels_count">Total Parcels: %s</string>
+
+    <string name="label_parcel_date">ETA</string>
+    <string name="label_product_color">Color</string>
+    <string name="label_product_location">Current Location [Live Update]</string>
+
+    <string name="title_phone_number">Enter Phone No.</string>
+
+    <string name="label_share">Check the location of your parcel - %s at theporter.in.</string>
+    <string name="label_send">Send</string>
+    <string name="label_cancel">Cancel</string>
+
+</resources>

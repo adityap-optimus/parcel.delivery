@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OverlayButton">
+        <attr name="ob_colorPressed" format="color" />
+        <attr name="ob_colorDisabled" format="color" />
+        <attr name="ob_colorNormal" format="color" />
+        <attr name="ob_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ExpandibleOverlayMenu">
+        <attr name="ob_addButtonColorPressed" format="color" />
+        <attr name="ob_addButtonColorNormal" format="color" />
+        <attr name="ob_iconRef" format="reference" />
+    </declare-styleable>
+</resources>
